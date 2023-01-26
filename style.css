@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C162C;
+    display: grid;
+    place-content: center;
+    gap: 16px;
+}
+.bt-default {
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #8257E5;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.bt-hover {
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #9674E5;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.bt-hover:hover {
+    background: #9674E5;
+}
+
+.bt-focus {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #8257E5;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.bt-focus:hover {
+    background: #9674E5;
+}
+.bt-focus:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+.bt-disable {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #8257E5;
+    opacity: 0.56;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: not-allowed;
+}
+
+.bt-disable:hover {
+    background: #9674E5;
+}
+
+.bt-disable:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+.bt-loading {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #8257E5;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: progress;
+
+}
+.bt-loading:hover {
+    background: #9674E5;
+}
+
+.bt-loading:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+.bt-loading > .ph-spinner-bold{
+    font-size: 16px;
+    animation: spin 2.5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bt-movable {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: #8257E5;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: move;
+}
+
+.bt-movable:hover {
+    background: #9674E5;
+}
+
+.bt-movable:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+.bt-movable > .ph-list-bold {
+    font-size: 16px;
+}
